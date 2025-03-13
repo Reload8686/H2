@@ -1,0 +1,176 @@
+org/h2/test/scripts/functions/numeric/log.sql
+line: 55
+exp: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681098 2.302585092994046
+got: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681096 2.302585092994046
+org/h2/test/scripts/functions/numeric/log.sql
+line: 61
+exp: > VH   V1  V2  V3                 V10                V64
+got: > VH   V1  V2  V3                V10                V64
+org/h2/test/scripts/functions/numeric/log.sql
+line: 61
+exp: > ---- --- --- ------------------ ------------------ ---
+got: > ---- --- --- ----------------- ------------------ ---
+org/h2/test/scripts/functions/numeric/log.sql
+line: 61
+exp: > -1.0 0.0 1.0 1.5849625007211563 3.3219280948873626 6.0
+got: > -1.0 0.0 1.0 1.584962500721156 3.3219280948873626 6.0
+org/h2/test/scripts/functions/numeric/log.sql
+line: 73
+exp: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681098 2.302585092994046
+got: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681096 2.302585092994046
+org/h2/test/scripts/functions/numeric/log.sql
+line: 97
+exp: > VH   V1  V2  V3                 V10                V64
+got: > VH   V1  V2  V3                V10                V64
+org/h2/test/scripts/functions/numeric/log.sql
+line: 97
+exp: > ---- --- --- ------------------ ------------------ ---
+got: > ---- --- --- ----------------- ------------------ ---
+org/h2/test/scripts/functions/numeric/log.sql
+line: 97
+exp: > -1.0 0.0 1.0 1.5849625007211563 3.3219280948873626 6.0
+got: > -1.0 0.0 1.0 1.584962500721156 3.3219280948873626 6.0
+java.lang.Exception: errors in script found
+	at org.h2.test.scripts.TestScript.test(TestScript.java:245)
+	at org.h2.test.TestBase.runTest(TestBase.java:145)
+	at org.h2.test.TestAll.addTest(TestAll.java:994)
+	at org.h2.test.TestAll.test(TestAll.java:711)
+	at org.h2.test.TestAll.runCoverage(TestAll.java:693)
+	at org.h2.test.TestAll.run(TestAll.java:526)
+	at org.h2.test.TestAll.main(TestAll.java:436)
+java.lang.AssertionError: Expected: 08:12:34.56<*>00 (13) actual: 08:12:34.5599 (13) 
+	at org.h2.test.TestBase.fail(TestBase.java:332)
+	at org.h2.test.TestBase.assertEquals(TestBase.java:678)
+	at org.h2.test.TestBase.assertEquals(TestBase.java:691)
+	at org.h2.test.TestBase.assertResult(TestBase.java:988)
+	at org.h2.test.db.TestFunctions.testToCharFromDateTime(TestFunctions.java:1500)
+	at org.h2.test.db.TestFunctions.test(TestFunctions.java:135)
+	at org.h2.test.TestBase.runTest(TestBase.java:145)
+	at org.h2.test.TestAll.addTest(TestAll.java:994)
+	at org.h2.test.TestAll.test(TestAll.java:733)
+	at org.h2.test.TestAll.runCoverage(TestAll.java:693)
+	at org.h2.test.TestAll.run(TestAll.java:526)
+	at org.h2.test.TestAll.main(TestAll.java:436)
+java.lang.NoClassDefFoundError: org/objectweb/asm/Type
+	at org.openjdk.nashorn.internal.codegen.types.Type.getInternalName(Type.java:405)
+	at org.openjdk.nashorn.internal.codegen.CompilerConstants.className(CompilerConstants.java:286)
+	at org.openjdk.nashorn.internal.codegen.CompilerConstants.staticCallNoLookup(CompilerConstants.java:425)
+	at org.openjdk.nashorn.internal.codegen.types.BooleanType.<clinit>(BooleanType.java:47)
+	at org.openjdk.nashorn.internal.codegen.types.Type.<clinit>(Type.java:891)
+	at org.openjdk.nashorn.internal.codegen.CompilerConstants.className(CompilerConstants.java:286)
+	at org.openjdk.nashorn.internal.codegen.CompilerConstants.staticCallNoLookup(CompilerConstants.java:425)
+	at org.openjdk.nashorn.internal.runtime.linker.Bootstrap.<clinit>(Bootstrap.java:66)
+	at org.openjdk.nashorn.internal.runtime.Context.<init>(Context.java:655)
+	at org.openjdk.nashorn.internal.runtime.Context.<init>(Context.java:585)
+	at org.openjdk.nashorn.api.scripting.NashornScriptEngine.lambda$new$0(NashornScriptEngine.java:126)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at org.openjdk.nashorn.api.scripting.NashornScriptEngine.<init>(NashornScriptEngine.java:124)
+	at org.openjdk.nashorn.api.scripting.NashornScriptEngineFactory.getScriptEngine(NashornScriptEngineFactory.java:152)
+	at java.scripting/javax.script.ScriptEngineManager.lambda$getEngineBy$2(ScriptEngineManager.java:237)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.tryAdvance(StreamSpliterators.java:300)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.tryAdvance(Streams.java:723)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:647)
+	at java.scripting/javax.script.ScriptEngineManager.getEngineBy(ScriptEngineManager.java:246)
+	at java.scripting/javax.script.ScriptEngineManager.getEngineByName(ScriptEngineManager.java:185)
+	at org.h2.test.db.TestTriggersConstraints.testTriggerAsJavascript(TestTriggersConstraints.java:512)
+	at org.h2.test.db.TestTriggersConstraints.test(TestTriggersConstraints.java:60)
+	at org.h2.test.TestBase.runTest(TestBase.java:145)
+	at org.h2.test.TestAll.addTest(TestAll.java:994)
+	at org.h2.test.TestAll.test(TestAll.java:769)
+	at org.h2.test.TestAll.runCoverage(TestAll.java:693)
+	at org.h2.test.TestAll.run(TestAll.java:526)
+	at org.h2.test.TestAll.main(TestAll.java:436)
+Caused by: java.lang.ClassNotFoundException: org.objectweb.asm.Type
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+	... 35 more
+org/h2/test/scripts/functions/numeric/log.sql
+line: 55
+exp: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681098 2.302585092994046
+got: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681096 2.302585092994046
+org/h2/test/scripts/functions/numeric/log.sql
+line: 61
+exp: > VH   V1  V2  V3                 V10                V64
+got: > VH   V1  V2  V3                V10                V64
+org/h2/test/scripts/functions/numeric/log.sql
+line: 61
+exp: > ---- --- --- ------------------ ------------------ ---
+got: > ---- --- --- ----------------- ------------------ ---
+org/h2/test/scripts/functions/numeric/log.sql
+line: 61
+exp: > -1.0 0.0 1.0 1.5849625007211563 3.3219280948873626 6.0
+got: > -1.0 0.0 1.0 1.584962500721156 3.3219280948873626 6.0
+org/h2/test/scripts/functions/numeric/log.sql
+line: 73
+exp: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681098 2.302585092994046
+got: > -0.6931471805599453 0.0 0.6931471805599453 1.0986122886681096 2.302585092994046
+org/h2/test/scripts/functions/numeric/log.sql
+line: 97
+exp: > VH   V1  V2  V3                 V10                V64
+got: > VH   V1  V2  V3                V10                V64
+org/h2/test/scripts/functions/numeric/log.sql
+line: 97
+exp: > ---- --- --- ------------------ ------------------ ---
+got: > ---- --- --- ----------------- ------------------ ---
+org/h2/test/scripts/functions/numeric/log.sql
+line: 97
+exp: > -1.0 0.0 1.0 1.5849625007211563 3.3219280948873626 6.0
+got: > -1.0 0.0 1.0 1.584962500721156 3.3219280948873626 6.0
+java.lang.Exception: errors in script found
+	at org.h2.test.scripts.TestScript.test(TestScript.java:245)
+	at org.h2.test.scripts.TestScript.getAllStatements(TestScript.java:111)
+	at org.h2.test.synth.TestCrashAPI.test(TestCrashAPI.java:164)
+	at org.h2.test.TestBase.runTest(TestBase.java:145)
+	at org.h2.test.TestAll.addTest(TestAll.java:994)
+	at org.h2.test.TestAll.test(TestAll.java:821)
+	at org.h2.test.TestAll.runCoverage(TestAll.java:693)
+	at org.h2.test.TestAll.run(TestAll.java:526)
+	at org.h2.test.TestAll.main(TestAll.java:436)
+java.lang.AssertionError: Failure
+	at org.h2.test.TestBase.fail(TestBase.java:332)
+	at org.h2.test.TestBase.fail(TestBase.java:306)
+	at org.h2.test.db.TestOutOfMemory.testDatabaseUsingInMemoryFileSystem(TestOutOfMemory.java:133)
+	at org.h2.test.db.TestOutOfMemory.test(TestOutOfMemory.java:60)
+	at org.h2.test.TestBase.runTest(TestBase.java:145)
+	at org.h2.test.TestAll.addTest(TestAll.java:994)
+	at org.h2.test.TestAll.test(TestAll.java:850)
+	at org.h2.test.TestAll.runCoverage(TestAll.java:693)
+	at org.h2.test.TestAll.run(TestAll.java:526)
+	at org.h2.test.TestAll.main(TestAll.java:436)
+java.lang.NoClassDefFoundError: Could not initialize class java.awt.GraphicsEnvironment$LocalGE
+	at java.desktop/java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment(GraphicsEnvironment.java:106)
+	at java.desktop/java.awt.Window.initGC(Window.java:492)
+	at java.desktop/java.awt.Window.init(Window.java:512)
+	at java.desktop/java.awt.Window.<init>(Window.java:554)
+	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
+	at org.h2.tools.GUIConsole.showStatusWindow(GUIConsole.java:205)
+	at org.h2.tools.GUIConsole.show(GUIConsole.java:71)
+	at org.h2.tools.Console.runTool(Console.java:228)
+	at org.h2.test.unit.TestTools.testConsole(TestTools.java:153)
+	at org.h2.test.unit.TestTools.test(TestTools.java:97)
+	at org.h2.test.TestBase.runTest(TestBase.java:145)
+	at org.h2.test.TestAll.addTest(TestAll.java:994)
+	at org.h2.test.TestAll.testAdditional(TestAll.java:893)
+	at org.h2.test.TestAll.runCoverage(TestAll.java:694)
+	at org.h2.test.TestAll.run(TestAll.java:526)
+	at org.h2.test.TestAll.main(TestAll.java:436)
+java.lang.AssertionError: Lazy execution too slow. Avg lazy time: 21758, avg not lazy time: 242
+	at org.h2.test.TestBase.fail(TestBase.java:332)
+	at org.h2.test.db.TestSubqueryPerformanceOnLazyExecutionMode.checkExecutionTime(TestSubqueryPerformanceOnLazyExecutionMode.java:143)
+	at org.h2.test.db.TestSubqueryPerformanceOnLazyExecutionMode.checkExecutionTime(TestSubqueryPerformanceOnLazyExecutionMode.java:111)
+	at org.h2.test.db.TestSubqueryPerformanceOnLazyExecutionMode.testSubqueryInJoin(TestSubqueryPerformanceOnLazyExecutionMode.java:78)
+	at org.h2.test.db.TestSubqueryPerformanceOnLazyExecutionMode.test(TestSubqueryPerformanceOnLazyExecutionMode.java:56)
+	at org.h2.test.TestBase.runTest(TestBase.java:145)
+	at org.h2.test.TestAll.addTest(TestAll.java:994)
+	at org.h2.test.TestAll.testAdditional(TestAll.java:895)
+	at org.h2.test.TestAll.runCoverage(TestAll.java:694)
+	at org.h2.test.TestAll.run(TestAll.java:526)
+	at org.h2.test.TestAll.main(TestAll.java:436)
